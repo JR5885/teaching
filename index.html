@@ -60,42 +60,44 @@
                     <i class="fa-solid fa-graduation-cap text-2xl"></i>
                 </div>
                 <div>
-                    <span class="text-xs font-bold text-amber-600 tracking-widest uppercase">EduVibe English</span>
-                    <h1 class="text-xl font-black text-slate-900 tracking-tight">中學英語創新教學實踐網</h1>
+                    <span class="text-xs font-bold text-amber-600 tracking-widest uppercase" data-zh="EduVibe English" data-en="EduVibe English">EduVibe English</span>
+                    <h1 class="text-xl font-black text-slate-900 tracking-tight" data-zh="中學英語創新教學實踐網" data-en="Modern Secondary English Pedagogy">中學英語創新教學實踐網</h1>
                 </div>
             </div>
-            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm text-slate-600">
-                <a href="#methods" class="hover:text-amber-600 transition-colors">六大核心教法</a>
-                <a href="#vicky-cases" class="hover:text-amber-600 transition-colors">Vicky 老師實務案例</a>
-                <a href="#toolkit" class="hover:text-amber-600 transition-colors">互動工具箱</a>
-                <a href="#curriculum" class="hover:text-amber-600 transition-colors">108課綱對應</a>
+            <nav class="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-600">
+                <a href="#hero" class="hover:text-amber-600 transition-colors" data-zh="首頁" data-en="Home">首頁</a>
+                <a href="#methods" class="hover:text-amber-600 transition-colors" data-zh="核心教法" data-en="Core Pedagogies">核心教法</a>
+                <a href="#vicky-cases" class="hover:text-amber-600 transition-colors" data-zh="實戰案例" data-en="Teaching Cases">實戰案例</a>
+                <a href="#toolkit" class="hover:text-amber-600 transition-colors" data-zh="互動工具箱" data-en="Toolkit">互動工具箱</a>
+                <a href="#curriculum" class="hover:text-amber-600 transition-colors" data-zh="108課綱對應" data-en="Curriculum">108課綱對應</a>
+                <a href="#about" class="hover:text-amber-600 transition-colors" data-zh="關於老師" data-en="About Vicky">關於老師</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="#vicky-cases" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-md transition-all text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-user-tie"></i> 諮詢合作
-                </a>
+                <button id="langToggle" onclick="toggleLanguage()" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-4 py-2 rounded-xl text-sm transition-all border border-slate-300 flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-amber-600"></i> <span id="langText">English (EN)</span>
+                </button>
             </div>
         </div>
     </header>
 
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="hero" class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-5xl mx-auto text-center relative z-10">
             <span class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/30 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-                <i class="fa-solid fa-sparkles"></i> 專為國高中英語教師打造的實戰錦囊
+                <i class="fa-solid fa-sparkles"></i> <span data-zh="專為國高中英語教師打造的實戰錦囊 ｜ 正德高級中學應徵" data-en="Designed for Cheng-Te High School Application & Modern Secondary Education">專為國高中英語教師打造的實戰錦囊 ｜ 正德高級中學應徵</span>
             </span>
-            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight mb-6">
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight mb-6" data-zh="賦能新世代英語課堂：<br>打破傳統，點燃學生口語自信" data-en="Empowering Next-Gen English Classrooms:<br>Igniting Student Speaking Confidence">
                 賦能新世代英語課堂：<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">打破傳統，點燃學生口語自信</span>
             </h1>
-            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed" data-zh="結合 CLIL 雙語融合、任務型教學、遊戲化科技與 108 課綱素養導向。借鏡中興大學 TESOL 碩士、前中港高中專任教師陳虹汝 (Vicky Chen) 的豐富教學生涯，打造高效、互動、啟發性的英語課堂。" data-en="Combining CLIL, TBL, gamified EdTech, and the 108 Curriculum competencies. Drawing from Vicky Chen's extensive teaching experience at Chung-Kang High School and National Chung Hsing University TESOL master's research.">
                 結合 CLIL 雙語融合、任務型教學、遊戲化科技與 108 課綱素養導向。借鏡中興大學 TESOL 碩士、前中港高中專任教師 <span class="text-white font-bold underline decoration-amber-500">陳虹汝 (Vicky Chen)</span> 的豐富教學生涯，打造高效、互動、啟發性的英語課堂。
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="#methods" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all flex items-center gap-3 text-base">
-                    <i class="fa-solid fa-compass"></i> 探索教法與策略
+                    <i class="fa-solid fa-compass"></i> <span data-zh="探索六大教法" data-en="Explore Core Pedagogies">探索六大教法</span>
                 </a>
-                <a href="#vicky-cases" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center gap-3 text-base">
-                    <i class="fa-solid fa-chalkboard-user"></i> 查看教案實例
+                <a href="#about" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center gap-3 text-base">
+                    <i class="fa-solid fa-user-tie"></i> <span data-zh="關於 Vicky 老師" data-en="About Vicky Chen">關於 Vicky 老師</span>
                 </a>
             </div>
         </div>
@@ -103,12 +105,12 @@
 
     <section id="methods" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Pedagogical Approaches</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">當前中學英語熱門六大教法</h2>
-            <p class="text-slate-600 text-lg">點選下方標籤切換不同教學法，深入了解核心理念、課堂應用與 108 課綱核心素養關聯。</p>
+            <span class="text-amber-600 font-bold text-sm tracking-widest uppercase" data-zh="Pedagogical Approaches" data-en="Pedagogical Approaches">Pedagogical Approaches</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4" data-zh="當前中學英語熱門六大教法" data-en="6 Core Modern Secondary English Pedagogies">當前中學英語熱門六大教法</h2>
+            <p class="text-slate-600 text-lg" data-zh="點選下方標籤切換不同教學法，深入了解核心理念、課堂應用與 108 課綱核心素養關聯。" data-en="Click the tabs below to explore core principles, classroom applications, and 108 Curriculum competencies.">點選下方標籤切換不同教學法，深入了解核心理念、課堂應用與 108 課綱核心素養關聯。</p>
         </div>
 
-        <!-- Search bar for filtering methods -->
+        <!-- Search bar -->
         <div class="max-w-md mx-auto mb-10">
             <div class="relative">
                 <i class="fa-solid fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
@@ -118,231 +120,154 @@
 
         <!-- Tabs Header -->
         <div class="flex flex-wrap justify-center gap-2 mb-10" id="methodTabs">
-            <button onclick="switchTab('clil')" data-tab="clil" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-amber-600 text-white shadow-md">
-                CLIL 雙語融合
-            </button>
-            <button onclick="switchTab('tbl')" data-tab="tbl" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
-                TBL 任務型教學
-            </button>
-            <button onclick="switchTab('gamification')" data-tab="gamification" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
-                遊戲化教學
-            </button>
-            <button onclick="switchTab('flipped')" data-tab="flipped" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
-                翻轉教室
-            </button>
-            <button onclick="switchTab('differentiated')" data-tab="differentiated" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
-                差異化教學
-            </button>
-            <button onclick="switchTab('ai')" data-tab="ai" class="tab-btn px-6 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
-                AI 輔助語言教學
-            </button>
+            <button onclick="switchTab('clil')" data-tab="clil" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-amber-600 text-white shadow-md">CLIL 雙語融合</button>
+            <button onclick="switchTab('tbl')" data-tab="tbl" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">TBL 任務型教學</button>
+            <button onclick="switchTab('gamification')" data-tab="gamification" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">遊戲化教學</button>
+            <button onclick="switchTab('flipped')" data-tab="flipped" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">翻轉教室</button>
+            <button onclick="switchTab('differentiated')" data-tab="differentiated" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">差異化教學</button>
+            <button onclick="switchTab('ai')" data-tab="ai" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">AI 輔助教學</button>
         </div>
 
         <!-- Tabs Content Container -->
         <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-xl">
-            
-            <!-- Tab 1: CLIL -->
-            <div id="content-clil" class="tab-content active method-item" data-keywords="clil 雙語 內容 語言 整合 學習 跨域">
+            <!-- CLIL -->
+            <div id="content-clil" class="tab-content active method-item" data-keywords="clil 雙語 內容 語言 整合 學習">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-layer-group"></i> 核心教法一
-                        </div>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">CLIL Approach</span>
                         <h3 class="text-2xl sm:text-3xl font-black text-slate-900">CLIL 內容與語言整合學習 (Content and Language Integrated Learning)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            CLIL 是指在非語言學科（如自然科學、歷史、地理或生活科技）中以英語作為授課媒介。學生在學習學科知識的同時，同步發展英語聽說讀寫能力。這完美打破了傳統將英文視為單一科目死背的困境，使英文成為學生探索真實世界的工具。
+                            在非語言學科（如自然、歷史、生活科技）中以英語授課。學生學習學科知識的同時同步發展英語能力，讓英文成為探索真實世界的實用工具。
                         </p>
                         <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
                             <h4 class="font-bold text-slate-900 mb-2">4C 核心原則：</h4>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-700">
-                                <li><strong>Content (內容)</strong>：結合跨學科主題探索</li>
-                                <li><strong>Communication (溝通)</strong>：課堂中真實使用目標語言</li>
-                                <li><strong>Cognition (認知)</strong>：培養分析與批判思考能力</li>
-                                <li><strong>Culture (文化)</strong>：培養多元文化視野與全球觀</li>
+                                <li><strong>Content</strong>：跨學科主題探索</li>
+                                <li><strong>Communication</strong>：真實使用目標語言</li>
+                                <li><strong>Cognition</strong>：批判思考能力</li>
+                                <li><strong>Culture</strong>：多元文化與全球視野</li>
                             </ul>
                         </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 課堂實踐與 Vicky 老師經驗
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> Vicky 老師實戰經驗
                         </h4>
                         <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            於維多利亞雙語中小學及大學部授課期間，Vicky 老師結合美國馬里蘭州 K-12 模式與生活科學議題，設計全英語沉浸式小組任務，讓學生運用英語發表實驗結果，有效突破口語焦慮，提升高階思維能力。
+                            於維多利亞雙語中小學結合美國馬里蘭州 K-12 模式與生活科學，設計全英語沉浸式小組任務，突破口語焦慮。
                         </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 領域核心素養「溝通互動」與「社會參與」，強調跨學科應用與真實情境溝通。
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tab 2: TBL -->
+            <!-- TBL -->
             <div id="content-tbl" class="tab-content method-item" data-keywords="tbl 任務型 溝通 互動 小組 合作">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-tasks"></i> 核心教法二
-                        </div>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">Task-Based Learning</span>
                         <h3 class="text-2xl sm:text-3xl font-black text-slate-900">TBL 任務型語言教學 (Task-Based Language Teaching)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            以「完成具體任務」為核心驅動力。教師設定生活化或真實世界的任務（如：規劃一場國際志工旅行、策劃商業簡報、解決社區環保問題），學生必須透過小組合作、討論與協商來產出最終成果，過程中自然習得字彙與文法句型。
+                            以「完成具體任務」為驅動力。學生透過小組協商與合作產出成果，過程中自然習得字彙與文法。
                         </p>
                         <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
                             <h4 class="font-bold text-slate-900 mb-2">三大教學階段：</h4>
                             <ul class="space-y-2 text-sm text-slate-700">
-                                <li><strong>1. 任務前 (Pre-task)</strong>：教師引入主題、激活舊經驗並介紹關鍵字彙。</li>
-                                <li><strong>2. 任務循環 (Task Cycle)</strong>：學生分組執行任務、準備報告並向全班發表。</li>
-                                <li><strong>3. 語言焦點 (Language Focus)</strong>：教師針對任務中發現的語言盲點進行精準解析與糾正。</li>
+                                <li><strong>1. 任務前 (Pre-task)</strong>：激活舊經驗與關鍵字彙。</li>
+                                <li><strong>2. 任務循環 (Task Cycle)</strong>：分組執行並上台發表。</li>
+                                <li><strong>3. 語言焦點 (Language Focus)</strong>：教師精準解析與糾正。</li>
                             </ul>
                         </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> Vicky 碩士論文與實務結合
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 碩士論文研究
                         </h4>
                         <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            Vicky 老師於中興大學 TESOL 碩士論文專攻「合作學習對國中生聽說讀寫能力之影響」。透過 TBL 結合合作學習結構，讓害羞內向的學生在小組中找到發聲舞台，顯著提升人際關係與英語自信。
+                            中興大學 TESOL 碩士論文專攻「合作學習對國中生聽說讀寫與人際關係之影響」，顯著提升學習自信。
                         </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 強調「自主行動」與「溝通互動」，培養學生解決真實問題的創造力。
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tab 3: Gamification -->
-            <div id="content-gamification" class="tab-content method-item" data-keywords="遊戲化 kahoot 퀴즈즈 quizizz 互動 動機 競賽">
+            <!-- Gamification -->
+            <div id="content-gamification" class="tab-content method-item" data-keywords="遊戲化 kahoot quizizz 互動 動機 競賽">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-gamepad"></i> 核心教法三
-                        </div>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">Gamification & EdTech</span>
                         <h3 class="text-2xl sm:text-3xl font-black text-slate-900">遊戲化教學 (Gamification & EdTech)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            將遊戲設計元素（如即時積分、排行榜、限時挑戰、徽章機制）融入日常英語文單字複習、文法句型檢測與聽力測驗中。能瞬間炒熱課堂氣氛，大幅降低學生對背誦單字的抗拒感，讓內向學生也搶著舉手作答。
+                            融入積分、排行榜與限時挑戰，炒熱單字複習與文法檢測氣氛，大幅降低背誦抗拒感。
                         </p>
                         <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-                            <h4 class="font-bold text-slate-900 mb-2">常用數位遊戲化工具：</h4>
-                            <p class="text-sm text-slate-700 leading-relaxed">
-                                常用工具如 <strong>Kahoot!</strong>（即時競賽與答題熱身）、<strong>Quizizz</strong>（自主節奏測驗）、<strong>Wordwall</strong>（互動單字配對與轉盤抽題），能精準收集學生答題數據，做為後續補救教學依據。
-                            </p>
+                            <h4 class="font-bold text-slate-900 mb-2">常用數位工具：</h4>
+                            <p class="text-sm text-slate-700">Kahoot!、Quizizz 與 Wordwall，精準收集答題數據。</p>
                         </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 課堂實踐與 Vicky 老師經驗
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 課堂實踐
                         </h4>
-                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            無論在中港高中或大學部授課，Vicky 老師經常於每堂課前 10 分鐘使用 Kahoot 進行上週重點複習或新單字闖關，營造健康的競爭氛圍，維持學生高度專注力。
-                        </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 「學習興趣與動機」之涵育，培養積極主動探索知識的學習態度。
-                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed">每堂課前 10 分鐘使用 Kahoot 進行重點複習與新單字闖關。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Tab 4: Flipped Classroom -->
-            <div id="content-flipped" class="tab-content method-item" data-keywords="翻轉教室 自主學習 線上影片 預習 課堂討論">
+            <!-- Flipped -->
+            <div id="content-flipped" class="tab-content method-item" data-keywords="翻轉教室 自主學習 線上影片 預習">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-rotate"></i> 核心教法四
-                        </div>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">Flipped Classroom</span>
                         <h3 class="text-2xl sm:text-3xl font-black text-slate-900">翻轉教室 (Flipped Classroom)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            颠覆傳統「課堂聽講、回家寫作業」的模式。學生在課前透過精煉的教學影片、Podcast 或數位教材自主預習文法與文章；寶貴的實體課堂時間則留給高階思維活動，如小組辯論、角色扮演、口語演練與深度解析。
+                            學生課前透過微課影片自主預習，實體課堂專注於小組辯論、角色扮演與高階口語演練。
                         </p>
-                        <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-                            <h4 class="font-bold text-slate-900 mb-2">關鍵實施步驟：</h4>
-                            <ul class="space-y-2 text-sm text-slate-700">
-                                <li><strong>課前預習</strong>：觀看 5-10 分鐘微課片並完成線上自我檢測單。</li>
-                                <li><strong>課中深化</strong>：老師針對學生疑問進行引導，展開實作與對話練習。</li>
-                                <li><strong>課後反思</strong>：透過協作平台（如 Padlet）繳交心得與同儕互評。</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> Vicky 老師自媒體與實務結合
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 自媒體結合
                         </h4>
-                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            Vicky 老師長期經營 Instagram 與 Threads 自媒體，產出職場與生活英語圖文與短影音，完美契合翻轉教學精神，引導學生在課外主動吸收碎片化知識。
-                        </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 「自主學習與終身學習能力」，培養學生規劃與管理自身學習進度的素養。
-                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed">Vicky 老師長期經營 IG 與 Threads，產出職場英語短影音，完美契合翻轉精神。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Tab 5: Differentiated -->
-            <div id="content-differentiated" class="tab-content method-item" data-keywords="差異化教學 分級 鷹架 客製化 學習落後 補救">
+            <!-- Differentiated -->
+            <div id="content-differentiated" class="tab-content method-item" data-keywords="差異化教學 分級 鷹架 補救">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-sliders"></i> 核心教法五
-                        </div>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">Differentiated Instruction</span>
                         <h3 class="text-2xl sm:text-3xl font-black text-slate-900">差異化教學 (Differentiated Instruction)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            面對中學教室中英語能力落差極大的現象（雙峰現象），教師根據學生的先備知識、學習風格與準備度，調整教學內容（Content）、歷程（Process）與產出成果（Product）。提供不同程度的學習鷹架，確保每位學生都能獲得成就感。
+                            依學生先備知識調整內容與鷹架，為學習落後者提供客製化輔導，同時為進階者設計挑戰任務。
                         </p>
-                        <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-                            <h4 class="font-bold text-slate-900 mb-2">三大調整維度：</h4>
-                            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-700">
-                                <li><strong>內容調整</strong>：分級閱讀文本與字彙表</li>
-                                <li><strong>歷程調整</strong>：鷹架式引導與同儕互助</li>
-                                <li><strong>產出調整</strong>：口頭發表、海報或數位簡報多元展現</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 課堂實踐與 Vicky 老師經驗
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 實務成效
                         </h4>
-                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            於虎尾科大及多所大學兼任期間，面對跨專業學群大學生，Vicky 老師針對學習落後學生提供客製化課業輔導與句型鷹架；同時為進階學生設計挑戰性商務英文任務，落實因材施教。
-                        </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 「適性發展與全人關懷」，確保每位學生皆能適性揚才。
-                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed">於虎尾科大等校兼任期間落實分級輔導，確保每位學生皆能適性揚才。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Tab 6: AI-Assisted -->
-            <div id="content-ai" class="tab-content method-item" data-keywords="ai 人工智慧 語音辨識 口說 機器人 科技輔助">
+            <!-- AI -->
+            <div id="content-ai" class="tab-content method-item" data-keywords="ai 人工智慧 語音辨識 口說 機器人">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">
-                            <i class="fa-solid fa-robot"></i> 核心教法六
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-black text-slate-900">AI 輔助英語教學 (AI-Assisted Language Learning, AALL)</h3>
+                        <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-lg text-xs font-bold">AI-Assisted Language Learning</span>
+                        <h3 class="text-2xl sm:text-3xl font-black text-slate-900">AI 輔助英語教學 (AALL)</h3>
                         <p class="text-slate-700 text-base leading-relaxed">
-                            運用生成式 AI 與語音辨識工具（如 AI 聊天機器人、口語發音評分系統、AI 寫作潤飾工具）為學生打造無壓力、即時回饋的沉浸式練習環境。能有效消除學生面對外師或全班開口時的焦慮感。
+                            運用生成式 AI 與語音辨識工具打造無壓力口語陪練與作文即時批改環境。
                         </p>
-                        <div class="bg-slate-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-                            <h4 class="font-bold text-slate-900 mb-2">教學應用場景：</h4>
-                            <ul class="space-y-2 text-sm text-slate-700">
-                                <li><strong>口說陪練</strong>：利用 AI 進行情境對話（如機場海關、餐廳點餐模擬）。</li>
-                                <li><strong>作文即時批改</strong>：針對文法、句型與用字精確度提供建設性回饋。</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-6">
                         <h4 class="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 實務結合與空中英語經驗
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i> 空中英語經驗
                         </h4>
-                        <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                            在空中英語擔任企業講師期間，Vicky 老師結合情境式引導與互動問答，協助超過 90% 學員克服口語焦慮。導入 AI 輔助練習工具更能讓學員在課後持續進行高強度口語演練與成效追蹤。
-                        </p>
-                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-600">
-                            <strong>108課綱對應：</strong> 「資訊科技與媒體素養」，培養善用數位工具解決問題的能力。
-                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed">協助超過 90% 成人學員克服口語焦慮，順利考取多益與雅思高標。</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -351,12 +276,12 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">Expert Showcase</span>
                 <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">Vicky Chen (陳虹汝老師) 教學實務案例</h2>
-                <p class="text-slate-300 text-lg">融合國高中正式教職、大專講師與企業培訓實戰經驗，為正德高級中學帶入最具前瞻性與成效的英語課堂。</p>
+                <p class="text-slate-300 text-lg">融合中港高中、公明國中、維多利亞雙語與大專院校實戰經驗，為正德高級中學帶入最具成效的英語課堂。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Case 1 -->
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between shadow-xl">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <span class="bg-amber-500/20 text-amber-300 px-3 py-1 rounded-lg text-xs font-bold">高中部英語文教案</span>
@@ -364,17 +289,17 @@
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3">108課綱多元選修：職場與生活英語</h3>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            針對高中生設計「看美劇學英文」與「生活英語會話」模組。結合 TBL 任務型教學，讓學生分組企劃在地文化導覽影片，訓練英語聽說讀寫綜合應用能力與跨文化素養。
+                            設計「看美劇學英文」與「生活英語會話」模組，結合 TBL 任務引導學生企劃在地文化導覽影片。
                         </p>
                     </div>
-                    <div class="border-t border-slate-700 pt-4 flex items-center justify-between text-xs text-amber-400 font-semibold">
+                    <div class="border-t border-slate-700 pt-4 text-xs text-amber-400 font-semibold flex items-center justify-between">
                         <span><i class="fa-solid fa-check-circle"></i> 臺中市立中港高中實戰</span>
                         <span>高階思維訓練</span>
                     </div>
                 </div>
 
                 <!-- Case 2 -->
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between shadow-xl">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <span class="bg-amber-500/20 text-amber-300 px-3 py-1 rounded-lg text-xs font-bold">國中基礎英語鞏固</span>
@@ -382,17 +307,17 @@
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3">合作學習與遊戲化單字闖關</h3>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            依據中興大學 TESOL 碩士論文研究成果，將合作學習結構與 Kahoot 遊戲化工具導入國中基礎英語課堂，有效化解學習低成就學生的焦慮，提升課堂參與動機。
+                            依據中興大學 TESOL 碩士論文研究，將合作學習結構與 Kahoot 導入國中基礎英語，化解學習焦慮。
                         </p>
                     </div>
-                    <div class="border-t border-slate-700 pt-4 flex items-center justify-between text-xs text-amber-400 font-semibold">
+                    <div class="border-t border-slate-700 pt-4 text-xs text-amber-400 font-semibold flex items-center justify-between">
                         <span><i class="fa-solid fa-check-circle"></i> 臺中市立公明國中經驗</span>
                         <span>提升學習自信</span>
                     </div>
                 </div>
 
                 <!-- Case 3 -->
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-between shadow-xl">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <span class="bg-amber-500/20 text-amber-300 px-3 py-1 rounded-lg text-xs font-bold">國際檢定與企業培訓</span>
@@ -400,10 +325,10 @@
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3">多益 925 高標與口語焦慮突破</h3>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            運用結構化情境引導與即時進度追蹤，在空中英語與宏全國際協助超過 90% 學員突破口語焦慮，順利考取多益、雅思與全民英檢高級證照。
+                            在空中英語與宏全國際運用情境式引導，協助超過 90% 學員克服口語障礙，順利考取多益、雅思與高級證照。
                         </p>
                     </div>
-                    <div class="border-t border-slate-700 pt-4 flex items-center justify-between text-xs text-amber-400 font-semibold">
+                    <div class="border-t border-slate-700 pt-4 text-xs text-amber-400 font-semibold flex items-center justify-between">
                         <span><i class="fa-solid fa-check-circle"></i> 空中英語 / 宏全國際</span>
                         <span>90%+ 突破口語焦慮</span>
                     </div>
@@ -416,48 +341,76 @@
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Digital Toolkit</span>
             <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">中學英語教師必備互動工具箱</h2>
-            <p class="text-slate-600 text-lg">結合數位工具與創新教法，為課堂創造高效互動與即時回饋。</p>
+            <p class="text-slate-600 text-lg">直接點擊下方官方按鈕，開啟最熱門的數位英語教學互動平台。</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Tool 1 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-xl font-bold mb-4">
-                    <i class="fa-solid fa-gamepad"></i>
+            <!-- Tool 1: Kahoot! -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-xl font-bold mb-4">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Kahoot! / Quizizz</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">單字隨堂考與文法熱身，透過積分排名激發競爭心與專注力。</p>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Kahoot! / Quizizz</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">用於單字隨堂考、文法熱身與課前複習，透過積分排名激發競爭心與專注力。</p>
-                <span class="inline-block bg-purple-50 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded-md">遊戲化教學</span>
+                <div>
+                    <span class="inline-block bg-purple-50 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded-md mb-4">遊戲化教學</span>
+                    <a href="https://kahoot.it/" target="_blank" rel="noopener noreferrer" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> 立即前往 (Kahoot)
+                    </a>
+                </div>
             </div>
 
-            <!-- Tool 2 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl font-bold mb-4">
-                    <i class="fa-solid fa-note-sticky"></i>
+            <!-- Tool 2: Padlet -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl font-bold mb-4">
+                        <i class="fa-solid fa-note-sticky"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Padlet 數位協作牆</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">小組腦力激盪、閱讀心得分享與口語錄音作業收集，實現同儕互評。</p>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Padlet 數位協作牆</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">用於小組任務腦力激盪、閱讀心得分享與口語錄音作業收集，實現同儕互評。</p>
-                <span class="inline-block bg-amber-50 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-md">任務型教學 / 協作</span>
+                <div>
+                    <span class="inline-block bg-amber-50 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-md mb-4">任務型教學</span>
+                    <a href="https://padlet.com/" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> 立即前往 (Padlet)
+                    </a>
+                </div>
             </div>
 
-            <!-- Tool 3 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl font-bold mb-4">
-                    <i class="fa-solid fa-microphone-lines"></i>
+            <!-- Tool 3: VoiceThread -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl font-bold mb-4">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">VoiceThread 語音工具</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">提供非同步口說練習，讓內向學生反覆錄音修正發音，消除焦慮。</p>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">VoiceThread / AI 語音工具</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">提供非同步口說練習，讓內向學生反覆錄音修正發音，消除公開發表的焦慮感。</p>
-                <span class="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md">AI 輔助 / 口語訓練</span>
+                <div>
+                    <span class="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md mb-4">AI 與口語訓練</span>
+                    <a href="https://learn.voicethread.com/" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> 立即前往 (VoiceThread)
+                    </a>
+                </div>
             </div>
 
-            <!-- Tool 4 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 text-xl font-bold mb-4">
-                    <i class="fa-solid fa-puzzle-piece"></i>
+            <!-- Tool 4: Wordwall -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 text-xl font-bold mb-4">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Wordwall 互動遊戲</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">快速製作詞彙轉盤與配對遊戲，適合分組競賽與課堂結語。</p>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Wordwall 互動遊戲</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">快速製作詞彙轉盤、配對遊戲與尋字拼圖，適合分組競賽與課堂結束前的有趣結語。</p>
-                <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-md">差異化與遊戲化</span>
+                <div>
+                    <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-md mb-4">差異化遊戲</span>
+                    <a href="https://wordwall.net/tc" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> 立即前往 (Wordwall)
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -467,7 +420,7 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Curriculum Alignment</span>
                 <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">108 課綱英語文核心素養對應指南</h2>
-                <p class="text-slate-600 text-lg">新課綱強調「溝通互動」、「社會參與」與「自主行動」。我們的創新教法如何完美對接？</p>
+                <p class="text-slate-600 text-lg">新課綱強調「自主行動」、「溝通互動」與「社會參與」。</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -476,9 +429,7 @@
                         <i class="fa-solid fa-person-running"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">A. 自主行動 (Autonomy)</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        透過<strong>翻轉教室</strong>與數位自學工具，培養學生規劃學習、主動探索多元主題與終身學習的習慣。
-                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed">透過翻轉教室與數位自學工具，培養學生規劃學習、主動探索多元主題的習慣。</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
@@ -486,9 +437,7 @@
                         <i class="fa-solid fa-comments"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">B. 溝通互動 (Communication)</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        運用 <strong>CLIL 雙語融合</strong>與 <strong>TBL 任務型教學</strong>，在真實情境中活用聽說讀寫，強化邏輯思辨與跨文化溝通能力。
-                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed">運用 CLIL 雙語融合與 TBL 任務型教學，在真實情境中活用聽說讀寫，強化跨文化溝通。</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
@@ -496,9 +445,51 @@
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">C. 社會參與 (Social Participation)</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        藉由<strong>差異化教學</strong>與團隊合作任務，讓每位學生在包容與正向增強的環境中建立自信，培養全球永續觀。
-                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed">藉由差異化教學與團隊合作任務，讓每位學生在正向增強環境中建立自信。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-xl">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">About The Educator</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">關於應徵教師：陳虹汝 (Vicky Chen)</h2>
+                <p class="text-slate-600 text-lg">中興大學 TESOL 碩士 ｜ 中等學校合格教師 ｜ TOEIC 925 分高標</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-amber-600"></i> 學歷背景 (Education)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li><strong>國立中興大學</strong>：教師專業發展研究所英語教學文學碩士 (TESOL)</li>
+                        <li><strong>中原大學</strong>：應用外國語文學系學士（輔修企管）</li>
+                        <li><strong>韓國外國語大學</strong>：交換學士（外國語文學系）</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-award text-amber-600"></i> 專業證照 (Certifications)
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li>✓ 中華民國教育部中等學校合格教師證書</li>
+                        <li>✓ 劍橋大學英語教學知識認證 (TKT)</li>
+                        <li>✓ 多益金色證標 925 分 (TOEIC 925)</li>
+                        <li>✓ 翻轉教室與教學精進技巧認證</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center">
+                <h3 class="font-bold text-amber-900 mb-2">正德高級中學 英文科專任／代理教師應徵專線</h3>
+                <p class="text-sm text-slate-700 mb-4">期待能以豐富的公私立中學實戰經驗與創新科技教學，為正德高中注入全新活力！</p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-amber-800">
+                    <span><i class="fa-solid fa-envelope mr-2"></i> janet90347@yahoo.com.tw</span>
+                    <span><i class="fa-solid fa-phone mr-2"></i> 0968-665-803</span>
                 </div>
             </div>
         </div>
@@ -525,18 +516,12 @@
     <script>
         // Tab switching logic
         function switchTab(tabId) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(el => {
-                el.classList.remove('active');
-            });
-            // Deactivate all buttons
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('bg-amber-600', 'text-white', 'shadow-md');
                 btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200', 'hover:bg-slate-100');
             });
-            // Show target tab content
             document.getElementById('content-' + tabId).classList.add('active');
-            // Activate target button
             const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
             if(activeBtn) {
                 activeBtn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200', 'hover:bg-slate-100');
@@ -544,24 +529,32 @@
             }
         }
 
-        // Live Search Filtering for Methods
+        // Live Search Filtering
         const searchInput = document.getElementById('methodSearch');
         if(searchInput) {
             searchInput.addEventListener('input', (e) => {
                 const term = e.target.value.toLowerCase().trim();
-                const items = document.querySelectorAll('.method-item');
-                let foundAny = false;
-                
-                items.forEach(item => {
+                document.querySelectorAll('.method-item').forEach(item => {
                     const keywords = item.getAttribute('data-keywords') || '';
                     const text = item.innerText.toLowerCase();
                     if(keywords.includes(term) || text.includes(term) || term === '') {
                         item.style.display = 'block';
-                        foundAny = true;
                     } else {
                         item.style.display = 'none';
                     }
                 });
+            });
+        }
+
+        // Language Switcher Toggle
+        let currentLang = 'zh';
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            document.getElementById('langText').innerText = currentLang === 'zh' ? 'English (EN)' : '中文 (ZH)';
+            
+            // Toggle data attributes if present
+            document.querySelectorAll('[data-zh]').forEach(el => {
+                el.innerHTML = el.getAttribute('data-' + currentLang);
             });
         }
     </script>
